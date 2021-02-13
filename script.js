@@ -65,7 +65,7 @@ const render = function() {
 
 todoControl.addEventListener('submit', function(event){
  event.preventDefault();
- if (!headerInput.value) {
+ if (!headerInput.value.trim()) {
   return;
  }
  const newTodo = {
